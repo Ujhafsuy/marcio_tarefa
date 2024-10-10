@@ -1,11 +1,11 @@
-const botao = document.querySelector('button')
-botao.addEventListener('click', soma)
-
-function soma(num, num0, num1){
-    let num1 = document.querySelector('#um')
-    let num2 = document.querySelector('#dois')
-    let num3 = document.querySelector('#tres')
-
+function soma(){
+    const num_f1 = Number(document.querySelector('#um').value)
+    const num_f2 = Number(document.querySelector('#dois').value)
+    const num_f3 = Number(document.querySelector('#tres').value)
+    
+    const pg = document.querySelector('p')
+    pg.innerHTML = `Resultado ${num_f1 + num_f2 + num_f3}`
 }
 
-soma()
+const botao = document.querySelector('button')
+botao.addEventListener('click', soma)
